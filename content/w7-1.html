@@ -1,0 +1,353 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40723121 CD2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40723121 CD2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='AG4組員.html'>AG4組員</a><li class='has-children'><a href='有關系統.html'>有關系統</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a><li><a href='About.html'>About</a></li></ul><li class='has-children'><a href='work.html'>work</a><ul class='dropdown'><li><a href='w7-1.html'>w7-1</a><li><a href='w1.html'>w1</a><li><a href='w2-1.html'>w2-1</a><li class='has-children'><a href='w3-4.html'>w3-4</a><ul class='dropdown'><li><a href='Python382.html'>Python382</a></li></ul><li><a href='w5-1.html'>w5-1</a><li><a href='w6.html'>w6</a></li></ul><li class='has-children'><a href='小組直播影片.html'>小組直播影片</a><ul class='dropdown'><li><a href='w8.html'>w8</a><li><a href='w7-2.html'>w7-2</a><li><a href='w2-2.html'>w2-2</a><li><a href='w5-2.html'>w5-2</a></li></ul><li class='has-children'><a href='問題解決.html'>問題解決</a><ul class='dropdown'><li><a href='更新小組倉儲.html'>更新小組倉儲</a><li><a href='網路設定.html'>網路設定</a></li></ul><li class='has-children'><a href='小組工作.html'>小組工作</a><ul class='dropdown'><li class='has-children'><a href='任務一.html'>任務一</a><ul class='dropdown'><li><a href='分工組員-1.html'>分工組員-1</a></li></ul><li class='has-children'><a href='任務二.html'>任務二</a><ul class='dropdown'><li><a href='分工組員-2.html'>分工組員-2</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">work << <a href='work.html'>Previous</a> <a href='w1.html'>Next</a> >> w1<br /><h1>w7-1</h1>
+<h4><span style="color: #ff0000;">第一章 成功的設計</span></h4>
+<h4><span style="color: #ff0000;">1.1設計指南</span></h4>
+<h5>本章為您介紹了設計用於電子產品，並定義了“成功的設計”。我們將討論設計師在設置產品需求中的角色，其中設計師適應了整個產品開發圖，溝通，以及開始設計時要考慮的初始因素。在開始之前，讓我們簡要定義一下我們談論“電子產品。” 它是其中裝有電路板的產品，通常具有一些輸入/輸出設備，例如LCD。電子產品的例子包括手機，數碼相機和超聲波牙刷。電子產品外殼是包圍並支撐電路的物品板。外殼使設備對消費者可用。外殼出於多種原因，這是必要的–保護電子設備（電路板和LCD）從環境或物理顛簸（例如掉落產品）。機箱可通過按鍵或按鈕訪問設備的輸入信息也許，並允許從設備傳輸信息。外殼提供結構，以便支持和保護電路板邏輯。已開發出一些非常有效的產品外殼的示例近年來出現的是Apple iPhone 7或HP Spectre筆記本電腦（兩者2016）。從本質上講，一種成功的外殼設計將是設計已符合產品的書面規格書spec）並已在設置的成本和時間參數內完成。現在讓我們開始探索-設計這些機箱的過程。</h5>
+<h4><span style="color: #ff0000;"><strong>1.2</strong><strong>定義整體團隊</strong></span></h4>
+<p>本節的目的是為了表明工程學（和機械工程學）特別是）並非自行設計產品；他們肯定是一個球隊。整個團隊的特徵是團隊可以是：</p>
+<ul>
+<li>小號或大號</li>
+<li>位於一個位置或分佈在全球</li>
+<li>資源有限或可以訪問幾乎無限的資源</li>
+<li>是否擁有最新工具</li>
+<li>出於各種原因而實現目標的動機</li>
+</ul>
+<ul>
+<li>經驗豐富</li>
+</ul>
+<p>整個工程工作包括多個設計方案學科。</p>
+<p>這些學科包括：</p>
+<ul>
+<li>電氣工程</li>
+<li>軟件和固件工程</li>
+<li>機械工程（包括結構和熱學）</li>
+<li>工業工程</li>
+<li>系統工程</li>
+</ul>
+<p>因此，我們認識到機械工程只是過度設計的一部分電子產品的所有工程設計，並且做出的許多決定是與其他學科合作。當代產品設計應平衡在發布的產品的所有因素之間進行各種取捨產品。確實，<em>整個</em>工程工作（來自Sect的所有學科。<a href="https://translate.googleusercontent.com/translate_f">1.2</a>） 只是產品發布（銷售）的<em>全部</em>努力的一部分。除工程上的努力外，以下小組也做出了貢獻：定義每個組，然後定義機械設計的具體方式與該團體“互動”。所有這些都是為了強調</p>
+<p>設計不是“在真空中”完成的，而是作為多任務產品交付的一部分球隊。<em>市場營銷（包括來自銷售的投入）</em>該組織負責產品定義，即定義客戶想要什麼以及什麼產品從客戶的角度來看。此“產品定義”通常採用工程將接受作為產品要求的文檔形式。營銷也有責任監督特定產品的適合程度進入公司（或公司部門）的整體產品線。EPE設計師與市場營銷部門互動，以定義產品如何uct將起作用，該功能如何向客戶（用戶）展示界面），以及產品對客戶的外觀（工業設計）。<em>運營（製造）</em>該組織負責整個流程單個組件的材料以及這些單個組件如何獲得製造，組裝並交付給客戶。如果工程負責是生產產品文檔，操作應該能夠文檔並獲得符合產品規格的產品。EPE設計人員通過對零件結構進行決策來與操作相交。陽離子技術，供應商（供應商）選擇以及質量/成本/外觀。<em>測試（設計驗證）</em>該組織負責測試原型設計和成熟的設計。這可以通過內部資源來完成機械設計小組（本身）或為此而設立的獨立小組功能。</p>
+<p>EPE設計器通過執行或與測試功能相交查看測試結果。對產品進行的測試實際上是產品的一部分-uct要求文件（PRD），並且必須證明產品通過該文檔中定義的測試。例如，如果珠三角聲明某產品必須承受一米高的跌落，然後必須定義一個陳述注意事項的測試</p>
+<p>如：</p>
+<ul>
+<li>單個物品有多少滴（測試中）</li>
+<li>物品的撞擊面或角落</li>
+<li>進行測試的環境（例如環境溫度）</li>
+<li>統計問題（例如必須通過測試的單個項目數）</li>
+<li>測試順序（單元將進行的各種測試中）</li>
+<li>“生存”的定義（測試後功能或外觀的程度）</li>
+</ul>
+<p><em>質量控制</em><em>/</em><em>質量保證</em>該組織確定是否單個零件（或整個組件）的可接受極限符合標準均在個別產品規格（附圖）和estab-中指定制定了總體企業標準。質量控制將與戰術有關情況下，（公司）質量保證將更關注戰略</p>
+<p>悲慘的情況。大多數公司都有控制和監控的各種方式重視產品質量，並肯定會引起客戶滿意和服務問題。EPE設計人員通過在其文檔中指定文檔來與該組織相交提及每個部分的可接受性極限，並可以包括裝配-蒼蠅。通常，可接受性限制採取以下形式：</p>
+<ul>
+<li>圖紙公差中指定的尺寸（幾何）控件</li>
+<li>圖紙上註明的材料和鍍層規格</li>
+<li>圖紙上規定的外觀缺陷排除標準</li>
+<li>功能規格如圖紙所示</li>
+<li>確定零件文檔某些方面的“關鍵”性質。</li>
+</ul>
+<p><em>服務</em>該組織負責維修，保修和退貨。產品功能。它們有助於確定現場問題的解決方案，設備。EPE設計師通過合理的設計與該組織相交產品的拆卸和維修過程。當然，具有設計的高可靠性將減少維修的理由。也可以尋求確定濫用產品的方法。</p>
+<p><em>項目管理</em>該組織負責跟踪以下項目：</p>
+<ul>
+<li>時間分配–遵守約定的最後期限</li>
+<li>資源分配</li>
+<li>優先級管理（針對單個項目以及與之競爭的項目相同的資源）</li>
+</ul>
+<ul>
+<li>符合產品規格</li>
+<li>實現成本目標</li>
+<li>項目報告情況</li>
+</ul>
+<p>EPE設計器通過報告對EPE的估計與該組織相交機械零件責任的所有單獨行項目的時間和資源。首先是產品概念化，設計，原型製作，測試和設計最終發布文檔中的內容。時間和資源的估計是在達到里程碑時更新。<em>高層管理人員</em>包括在該組中的任何人誰負責項目，並且需要了解該項目。將提供項目更新在項目期間的特定時間加入該小組。高層管理人員將提供對項目的領導力和遠見。EPE設計器以間接方式與高層管理人員相交。項目狀態的報告在任何時候都是相關的，通常是通過專案經理。</p>
+<h4><span style="color: #ff0000;"><strong>1.3</strong><strong>產品要求</strong></span></h4>
+<p>確定成功是滿足（或超越）要求的問題。項目。這是一個簡單的聲明，但實際上在相互關聯方面非常複雜方面。如果項目達到了目標，則可以確定為成功。這些目標可以是在以下（一個或多個）書面文件中解決。<em>產品需求文檔（</em><em>PRD</em><em>）</em>該文檔可以有多種形式名稱（因公司而異）。基本上，這是嘗試的“合同”指定產品的基本功能。它可以像幾個參數一樣簡單圖還是極其複雜的。</p>
+<p>它可以包含：</p>
+<p>（a）產品對客戶的成就的描述-通常並<em>沒有</em>確切指定的產品將如何工作。也就是說，有關“如何從這裡到達那裡”並不明確。此說明在“最終產品的外觀”而不是“內部工作原理”的細節ings。” 後續文件（或規格）也可以指定產品。同樣，珠三角會在市場營銷和工程師之間達成協議，關於產品將是什麼。PRD的內容詳細信息可能有所不同。這<em>是</em>（應）在項目過程中隨著要素的修改而更新或添加到。在每次整體產品審核時，應在以下方面進行比較：設計如何符合RD。</p>
+<p>（b）產品如何與客戶互動的說明。這個會包括：</p>
+<p>如何向客戶顯示信息或信息將如何顯示從客戶那裡獲取產品。這可以是視覺，聽覺或觸。</p>
+<ul>
+<li>產品的各種接口，例如連接器，開關或按鈕。</li>
+<li>用於向客戶提供信息的標籤或圖標。</li>
+</ul>
+<p>（c）產品各個組成部分的說明。也就是說，如果產品（正在設計的產品）需要其他設備或電纜才能起作用在較大的系統中，則將對“系統”的各個部分進行描述需要描述。因此，人們將需要<em>準確地</em><span> </span>“劃定邊界”什麼<em>這個</em>產品（正在設計）是。到底什麼是“可交付成果”？顧客？</p>
+<p>（d）表明產品的最終美學（外觀）。顏色，特克斯實體和工業設計通常都非常詳細。</p>
+<p>（e）產品將在其中運行和存儲的環境的清單。這包括溫度，衝擊，跌落，振動，濕度，進水量保護，運輸條件，海拔高度和特定的腐蝕性氣氛。</p>
+<p>（f）產品需要通過的任何標準的清單。這既包括安全和監管標準，例如美國保險商實驗室（UL）安全，符合聯邦電磁通訊規範（FCC）干擾（EMI）以及數百種其他合規標準這是當今設計界的重要組成部分。其中一些標準是國家/地區具體而言，而其他人則在全球範圍內被接受。顯然，使用醫療，食品或兒童玩具時，將進行嚴格的測試通過標準。<em>內部測試報告</em>這些表示積極的測試結果。這些是結果完成測試以顯示珠三角上的要求已通過。如果尚未通過測試，則將啟動行動計劃以改善產品並進行進一步測試。<em>初始客戶的報告</em>這是“ alpha”或“ beta”測試，其中客戶反饋是正面還是負面。希望客戶變得可衡量產品的價值。何時可以對產品進行合理的改進此“實際”反饋是可用的。“ Alpha”測試通常使用內部人員在模擬實際客戶，而“ beta”測試是通常在發貨到實際（付款）之前與現有客戶進行顧客。</p>
+<p><span><em></em></span></p>
+<h4><span style="color: #ff0000;"><strong>1.4</strong><strong>草繪與細節</strong></span></h4>
+<p>EPE設計人員必須知道何時在以下兩種模式之間切換：</p>
+<p><span><span>•<span> </span><strong>素描</strong>或頭腦風暴：這是一個非常快速的構思階段。通常完成用鉛筆（請勿使用橡皮擦；這會減慢思考過程）。沒有什麼是詳細-所有這些似乎都完全適合這些草圖。規模並不是真的很重要ant 稍後再說。獲得了其他人的反饋。速度是這裡的重點 設計師在紙上有了很多選擇，因此</span></span>可以決定幾個選擇的缺點。還有哪些其他選擇定向？起來嗎 下？側身？</p>
+<p><span><span>•<span> </span><strong>細部化</strong>：即提供“一定數量”的細部。細節量所需要的取決於情況的嚴重性或獨特性。在裡面草圖（階段），<em>一切</em>正常，您已經“遮蓋了”可能<em>絆腳石</em>。您這樣做是為了<em>加快</em>整個設計過程，但是現在，在詳細信息模式下，需要進行更嚴格的分析。在“詳細模式”下，您可以準確地設計出（更多）設計中的一些關鍵部分，設計師將其視為“交易突破者”。細節通常需要CAD設計才能提供真實的幾何圖形並根據情況進行縮放。再次，設計評論可能是至關重要的可以繼續快速走下同意的設計道路。我想繼續討論基本佈局，假設我們正在設計一個全新的設計。許多概念將適用於延續或修改設計。另外，我想繼續進行設計彷彿我們仍處於“草圖階”。</span></span></p>
+<h4><span style="color: #ff0000;"><strong>1.5</strong><strong>設計評論</strong></span></h4>
+<p>以及在“草圖”和“詳細”模式之間來回切換（以上），設計師需要對何時讓其他人加入設計團隊具有紮實的感覺審查或評論他們的設計（無論設計處於什麼階段）。一些這些設計評論<em>非常</em>正式，而其他設計評論可能<em>非常</em>正式非正式的。正式設計評審通常是按照項目中計劃的里程碑進行的時間表。他們包括設計團隊的特定成員，並且具有明確的標誌-被那些成員關閉。非正式的設計評審是偶爾和/或自發進行的。可以是就像設計師轉到下一個辦公室並要求同事“接看看這個”或召集設計師感覺的幾個人之間的簡短會議足夠接近設計問題或具有類似經驗設計。</p>
+<p><span style="color: #99cc00;"><strong> </strong><strong>關於設計評論的一些一般性評論：</strong></span></p>
+<p> 1.參加會議，並註意參加會議的人。</p>
+<p>2.（至少，粗略地）記錄所提出的所有（相關）問題。</p>
+<p>3.可能邀請<em>不</em>熟悉基本設計的人參加設計評審設計。他們可能是來自不同職能部門或部門的人員公司。有時，此人可以在問題上添加不同的“觀點”，例如他們從不同的角度看待它們。</p>
+<p>4.簡要回顧設計的主要目標。</p>
+<p>5.設計者已經考慮了提出的一些想法；那是很好，請按照您的原理快速進行。</p>
+<p>6.有些想法（最初）似乎沒有價值或不“切合實際”。只是注意他們繼續前進；您可能稍後會看到該值。</p>
+<p>7.您<em>將從</em>設計審查中獲得價值–如果您是向它“開放”。感謝所有相關人員，因為他們為您提供了見解和經驗。</p>
+<ol start="8">
+<li>將您在會議上的筆記<em>發布</em>給與會人員和會議記錄。整個項目團隊。這將記錄您和其他人要採取的進一步行動，在設計上取得進展。要求您的設計提供更多意見審核小組。</li>
+</ol>
+<h4><span style="color: #ff0000;"><strong>1.6</strong><strong>溝通</strong></span></h4>
+<p>溝通是設計成功的必要條件。那句話待命本身，但值得進行更充分的討論。</p>
+<h5><span style="color: #ff0000;"><strong><em>1.6.1</em></strong><strong><em>溝通目的</em></strong></span></h5>
+<p>交流的目的是傳達有關設計的信息。這是所需，因為信息可提供問題的答案，將設計記錄為它目前存在，並記錄了設計的演變。溝通可以被書面，拍攝或口頭表達。</p>
+<p>書面文件的形式為：</p>
+<ul>
+<li>規格</li>
+<li>圖紙</li>
+<li>項目會議記錄/時間表</li>
+<li>筆記本中的筆記</li>
+<li>特定於項目或程序的電子郵件（任何數字通信）</li>
+</ul>
+<p>電影文件是項目程序，測試和事件。口頭交流是將項目推進到完成狀態。所有重要的口頭交流都必須以書面形式進行表格，以便項目的所有成員都可以查看這些通訊。</p>
+<h5><span style="color: #ff0000;"><strong><em>1.6.2</em></strong><strong><em>溝通的價值</em></strong></span></h5>
+<p>良好的溝通將使項目更加成功。良好的溝通</p>
+<p>具有以下屬性：</p>
+<ul>
+<li>準確–信息真實，並有測試/文檔支持。</li>
+<li>簡潔–信息直截了當，沒有過多的措辭。</li>
+<li>分佈式–分發給所有需要信息的人員。</li>
+<li>快速-信息迅速傳播。</li>
+<li>提供解決方案–提出解決方案的方法可以使解決方案更加生動處理。</li>
+</ul>
+<p></p>
+<h4><span style="color: #ff0000;"><strong>1.7</strong><strong>工程經濟</strong></span></h4>
+<p>如果不討論有關成功的設計的任何章節，就無法完成。工程經濟學的基本原理。“花什麼錢”是至關重要的幾乎所有努力都需要考慮。在許多產品設計中，它將是產品成敗的主要原因。章節<a href="https://translate.googleusercontent.com/translate_f">4</a>將包括關於成本與時間與規格之間的權衡，但現在，讓我們開始討論，說明EPE設計人員必須具備成本能力信息和一些收支平衡分析。在參考文獻中<span> </span><span>[</span><a href="https://translate.googleusercontent.com/translate_f">1<span>個</span></a>]，其中指出“如果一個Engi-指導項目是要成功滿足人類需求，因此必須進行設計和操作既保證了物理上的可行性，又保證了經濟上的可行性。”由於成本是如此重要，因此設計師需要：</p>
+<p>1.注意什麼成本目標（對於單個零件還是整個零件）組裝）用於設計。</p>
+<p>2.注意所設計零件的材料和工藝選擇。EPE設計者有責任提出各種選擇通過（也許）在功能上的折衷來實現（或降低）成本目標。設計人員在任何情況下都不應在任何安全考慮上妥協。必須將所有選項清楚地呈現給管理層，以便進行權衡可以徹底確定。這是最重要的創造力元素之一EPE設計人員為產品的整體設計帶來的便利。</p>
+<p>3.提出適用於產品和工藝的解決方案。uct處於其整個生命週期中。某些解決方案可能更適合早期生產（上市時間非常關鍵）比成熟生產。</p>
+<p>4.根據訂購的適當數量提供成本信息，返回項目團隊，以便使這一重要指標始終眾所周知。</p>
+<p></p>
+<p>讓我們來看一個例子。如第一章所示。<a href="https://translate.googleusercontent.com/translate_f">4</a>，是否選擇“工具”的選擇提到一部分。可以通過以下選擇來分析此類問題：（每種情況下每月需要200個零件）</p>
+<ul>
+<li>選擇A：供應商A的非工具零件成本為5.00美元</li>
+<li>選擇B：設計工具零件，並讓供應商T製作工具。估計</li>
+</ul>
+<p>成本：加工零件成本為<span class="mjx-chtml MathJax_CHTML" data-mathml='&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mn&gt;1.00&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF0C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x52A0;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5DE5;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x6210;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x672C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x70BA;&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;' id="MathJax-Element-1-Frame" role="presentation" style="box-sizing: border-box; display: inline-block; line-height: 0; text-indent: 0px; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 18.08px; letter-spacing: normal; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; margin: 0px; padding: 1px 0px; position: relative;" tabindex="0"><span aria-hidden="true" class="mjx-math" id="MJXc-Node-1"><span class="mjx-mrow" id="MJXc-Node-2"><span class="mjx-mn" id="MJXc-Node-3"><span class="mjx-char MJXc-TeX-main-R">1.00</span></span><span class="mjx-texatom" id="MJXc-Node-4"><span class="mjx-mrow" id="MJXc-Node-5"><span class="mjx-mo" id="MJXc-Node-6"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">，</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-7"><span class="mjx-mrow" id="MJXc-Node-8"><span class="mjx-mo" id="MJXc-Node-9"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">加</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-10"><span class="mjx-mrow" id="MJXc-Node-11"><span class="mjx-mo" id="MJXc-Node-12"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">工</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-13"><span class="mjx-mrow" id="MJXc-Node-14"><span class="mjx-mo" id="MJXc-Node-15"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">成</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-16"><span class="mjx-mrow" id="MJXc-Node-17"><span class="mjx-mo" id="MJXc-Node-18"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">本</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-19"><span class="mjx-mrow" id="MJXc-Node-20"><span class="mjx-mo" id="MJXc-Node-21"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">為</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1.00</mn><mrow class="MJX-TeXAtom-ORD"><mo>，</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>加</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>工</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>成</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>本</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>為</mo></mrow></math></span></span><span> </span>4000.00</p>
+<p>在什麼時候模具成本和新零件成本將<em>等於</em>舊的部分成本？這就是所謂的“收支平衡”。</p>
+<p>答：這很容易計算或繪製（見圖 <span> </span><a href="https://translate.googleusercontent.com/translate_f">1.1</a>）：</p>
+<p><span style="color: #33cccc;">(<span class="mjx-chtml MathJax_CHTML" data-mathml='&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;/&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xD7;&lt;/mo&gt;&lt;mo&gt;&amp;quot;&lt;/mo&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;&amp;quot;&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;&amp;#xD7;&lt;/mo&gt;&lt;mn&gt;200&lt;/mn&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;/&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;/math&gt;' id="MathJax-Element-2-Frame" role="presentation" style="box-sizing: border-box; display: inline-block; line-height: 0; text-indent: 0px; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 18.08px; letter-spacing: normal; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; margin: 0px; padding: 1px 0px; position: relative;" tabindex="0"><span aria-hidden="true" class="mjx-math" id="MJXc-Node-22"><span class="mjx-mrow" id="MJXc-Node-23"><span class="mjx-mn" id="MJXc-Node-24"><span class="mjx-char MJXc-TeX-main-R">5</span></span><span class="mjx-texatom" id="MJXc-Node-25"><span class="mjx-mrow" id="MJXc-Node-26"><span class="mjx-mo" id="MJXc-Node-27"><span class="mjx-char MJXc-TeX-main-R">/</span></span></span></span><span class="mjx-mi" id="MJXc-Node-28"><span class="mjx-char MJXc-TeX-math-I">p</span></span><span class="mjx-mi" id="MJXc-Node-29"><span class="mjx-char MJXc-TeX-math-I">a</span></span><span class="mjx-mi" id="MJXc-Node-30"><span class="mjx-char MJXc-TeX-math-I">r</span></span><span class="mjx-mi" id="MJXc-Node-31"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mo" id="MJXc-Node-32"><span class="mjx-char MJXc-TeX-main-R">×</span></span><span class="mjx-mo MJXc-space3" id="MJXc-Node-33"><span class="mjx-char MJXc-TeX-main-R">"</span></span><span class="mjx-mi MJXc-space3" id="MJXc-Node-34"><span class="mjx-char MJXc-TeX-math-I">M</span></span><span class="mjx-mo MJXc-space3" id="MJXc-Node-35"><span class="mjx-char MJXc-TeX-main-R">"</span></span><span class="mjx-mi MJXc-space3" id="MJXc-Node-36"><span class="mjx-char MJXc-TeX-math-I">m</span></span><span class="mjx-mi" id="MJXc-Node-37"><span class="mjx-char MJXc-TeX-math-I">o</span></span><span class="mjx-mi" id="MJXc-Node-38"><span class="mjx-char MJXc-TeX-math-I">n</span></span><span class="mjx-mi" id="MJXc-Node-39"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-40"><span class="mjx-char MJXc-TeX-math-I">h</span></span><span class="mjx-mi" id="MJXc-Node-41"><span class="mjx-char MJXc-TeX-math-I">s</span></span><span class="mjx-mo MJXc-space2" id="MJXc-Node-42"><span class="mjx-char MJXc-TeX-main-R">×</span></span><span class="mjx-mn MJXc-space2" id="MJXc-Node-43"><span class="mjx-char MJXc-TeX-main-R">200</span></span><span class="mjx-mi" id="MJXc-Node-44"><span class="mjx-char MJXc-TeX-math-I">p</span></span><span class="mjx-mi" id="MJXc-Node-45"><span class="mjx-char MJXc-TeX-math-I">a</span></span><span class="mjx-mi" id="MJXc-Node-46"><span class="mjx-char MJXc-TeX-math-I">r</span></span><span class="mjx-mi" id="MJXc-Node-47"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-48"><span class="mjx-char MJXc-TeX-math-I">s</span></span><span class="mjx-texatom" id="MJXc-Node-49"><span class="mjx-mrow" id="MJXc-Node-50"><span class="mjx-mo" id="MJXc-Node-51"><span class="mjx-char MJXc-TeX-main-R">/</span></span></span></span><span class="mjx-mi" id="MJXc-Node-52"><span class="mjx-char MJXc-TeX-math-I">m</span></span><span class="mjx-mi" id="MJXc-Node-53"><span class="mjx-char MJXc-TeX-math-I">o</span></span><span class="mjx-mi" id="MJXc-Node-54"><span class="mjx-char MJXc-TeX-math-I">n</span></span><span class="mjx-mi" id="MJXc-Node-55"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-56"><span class="mjx-char MJXc-TeX-math-I">h</span></span><span class="mjx-mo" id="MJXc-Node-57"><span class="mjx-char MJXc-TeX-main-R">)</span></span><span class="mjx-mo MJXc-space3" id="MJXc-Node-58"><span class="mjx-char MJXc-TeX-main-R">=</span></span><span class="mjx-mo" id="MJXc-Node-59"><span class="mjx-char MJXc-TeX-main-R">(</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mi>p</mi><mi>a</mi><mi>r</mi><mi>t</mi><mo>×</mo><mo>"</mo><mi>M</mi><mo>"</mo><mi>m</mi><mi>o</mi><mi>n</mi><mi>t</mi><mi>h</mi><mi>s</mi><mo>×</mo><mn>200</mn><mi>p</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mi>m</mi><mi>o</mi><mi>n</mi><mi>t</mi><mi>h</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo></math></span></span>1 / part × "M" months × 200 parts /month)+ $4000</span></p>
+<p> <span>“ M”</span>顯示為5個月。因此，選擇B（工具化版本）以使用Choice A（非工具版本）實現“收支平衡”。</p>
+<p></p>
+<p><span style="color: #33cccc;">ChoiceA = <span class="mjx-chtml MathJax_CHTML" data-mathml='&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;/&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xD7;&lt;/mo&gt;&lt;mn&gt;200&lt;/mn&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;/&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mo&gt;&amp;#xD7;&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;/math&gt;' id="MathJax-Element-3-Frame" role="presentation" style="box-sizing: border-box; display: inline-block; line-height: 0; text-indent: 0px; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 18.08px; letter-spacing: normal; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; margin: 0px; padding: 1px 0px; position: relative;" tabindex="0"><span aria-hidden="true" class="mjx-math" id="MJXc-Node-60"><span class="mjx-mrow" id="MJXc-Node-61"><span class="mjx-mn" id="MJXc-Node-62"><span class="mjx-char MJXc-TeX-main-R">5</span></span><span class="mjx-texatom" id="MJXc-Node-63"><span class="mjx-mrow" id="MJXc-Node-64"><span class="mjx-mo" id="MJXc-Node-65"><span class="mjx-char MJXc-TeX-main-R">/</span></span></span></span><span class="mjx-mi" id="MJXc-Node-66"><span class="mjx-char MJXc-TeX-math-I">p</span></span><span class="mjx-mi" id="MJXc-Node-67"><span class="mjx-char MJXc-TeX-math-I">a</span></span><span class="mjx-mi" id="MJXc-Node-68"><span class="mjx-char MJXc-TeX-math-I">r</span></span><span class="mjx-mi" id="MJXc-Node-69"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mo MJXc-space2" id="MJXc-Node-70"><span class="mjx-char MJXc-TeX-main-R">×</span></span><span class="mjx-mn MJXc-space2" id="MJXc-Node-71"><span class="mjx-char MJXc-TeX-main-R">200</span></span><span class="mjx-mi" id="MJXc-Node-72"><span class="mjx-char MJXc-TeX-math-I">p</span></span><span class="mjx-mi" id="MJXc-Node-73"><span class="mjx-char MJXc-TeX-math-I">a</span></span><span class="mjx-mi" id="MJXc-Node-74"><span class="mjx-char MJXc-TeX-math-I">r</span></span><span class="mjx-mi" id="MJXc-Node-75"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-76"><span class="mjx-char MJXc-TeX-math-I">s</span></span><span class="mjx-texatom" id="MJXc-Node-77"><span class="mjx-mrow" id="MJXc-Node-78"><span class="mjx-mo" id="MJXc-Node-79"><span class="mjx-char MJXc-TeX-main-R">/</span></span></span></span><span class="mjx-mi" id="MJXc-Node-80"><span class="mjx-char MJXc-TeX-math-I">m</span></span><span class="mjx-mi" id="MJXc-Node-81"><span class="mjx-char MJXc-TeX-math-I">o</span></span><span class="mjx-mi" id="MJXc-Node-82"><span class="mjx-char MJXc-TeX-math-I">n</span></span><span class="mjx-mi" id="MJXc-Node-83"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-84"><span class="mjx-char MJXc-TeX-math-I">h</span></span><span class="mjx-mo MJXc-space2" id="MJXc-Node-85"><span class="mjx-char MJXc-TeX-main-R">×</span></span><span class="mjx-mn MJXc-space2" id="MJXc-Node-86"><span class="mjx-char MJXc-TeX-main-R">5</span></span><span class="mjx-mi" id="MJXc-Node-87"><span class="mjx-char MJXc-TeX-math-I">m</span></span><span class="mjx-mi" id="MJXc-Node-88"><span class="mjx-char MJXc-TeX-math-I">o</span></span><span class="mjx-mi" id="MJXc-Node-89"><span class="mjx-char MJXc-TeX-math-I">n</span></span><span class="mjx-mi" id="MJXc-Node-90"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-91"><span class="mjx-char MJXc-TeX-math-I">h</span></span><span class="mjx-mo MJXc-space3" id="MJXc-Node-92"><span class="mjx-char MJXc-TeX-main-R">=</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mi>p</mi><mi>a</mi><mi>r</mi><mi>t</mi><mo>×</mo><mn>200</mn><mi>p</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mi>m</mi><mi>o</mi><mi>n</mi><mi>t</mi><mi>h</mi><mo>×</mo><mn>5</mn><mi>m</mi><mi>o</mi><mi>n</mi><mi>t</mi><mi>h</mi><mo>=</mo></math></span></span>5000</span></p>
+<p><span><span><span><img alt="" height="268" src="https://s40723138.github.io/cd2020ag4/images/%E6%9C%AA%E5%91%BD%E5%90%8D.png" width="320"/></span></span></span></p>
+<p>5個月後，<em>工具</em>零件Choice B的總成本將減少。顯然，如果產品生產5個月或更長時間，我們將選擇對零件進行加工。</p>
+<p>但是，上述“經濟現實”實際上有一些複雜之處。</p>
+<p>選項B的費用（上述）不包括：</p>
+<p>1.設計和記錄<em>工具</em>零件的成本。</p>
+<p>2.競標該工具並確定供應商T是最佳工具的成本供應商。</p>
+<p>3.對工具零件進行原型製作的成本（在批准工具圖紙之前部分）。</p>
+<p>4.批准工具零件的第一篇文章的成本（我們將在此處假設最初的第一篇文章已獲批准–希望不需要修改工具因為這將是額外的費用）。</p>
+<p>5.測試工具零件的成本（作為未工具零件的替代品）。</p>
+<p>6.“用完”未使用工具的零件並切換到使用工具的零件的成本。</p>
+<p>（應將此零件所在的裝配體的日期編碼為註釋轉換？）</p>
+<p>7.模具費用。也就是說，工具的成本為<span class="mjx-chtml MathJax_CHTML" data-mathml='&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mn&gt;4000&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5BE6;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x969B;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x50F9;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x503C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x8D85;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x904E;&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;' id="MathJax-Element-4-Frame" role="presentation" style="box-sizing: border-box; display: inline-block; line-height: 0; text-indent: 0px; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 18.08px; letter-spacing: normal; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; margin: 0px; padding: 1px 0px; position: relative;" tabindex="0"><span aria-hidden="true" class="mjx-math" id="MJXc-Node-93"><span class="mjx-mrow" id="MJXc-Node-94"><span class="mjx-mn" id="MJXc-Node-95"><span class="mjx-char MJXc-TeX-main-R">4000</span></span><span class="mjx-texatom" id="MJXc-Node-96"><span class="mjx-mrow" id="MJXc-Node-97"><span class="mjx-mo" id="MJXc-Node-98"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">實</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-99"><span class="mjx-mrow" id="MJXc-Node-100"><span class="mjx-mo" id="MJXc-Node-101"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">際</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-102"><span class="mjx-mrow" id="MJXc-Node-103"><span class="mjx-mo" id="MJXc-Node-104"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">價</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-105"><span class="mjx-mrow" id="MJXc-Node-106"><span class="mjx-mo" id="MJXc-Node-107"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">值</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-108"><span class="mjx-mrow" id="MJXc-Node-109"><span class="mjx-mo" id="MJXc-Node-110"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">超</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-111"><span class="mjx-mrow" id="MJXc-Node-112"><span class="mjx-mo" id="MJXc-Node-113"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">過</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4000</mn><mrow class="MJX-TeXAtom-ORD"><mo>實</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>際</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>價</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>值</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>超</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>過</mo></mrow></math></span></span><span> </span>4000。讓我解釋。如果<em>不</em>將$ 4000美元提供給工具製造商，那將是</p>
+<p>為公司賺取利息。“單利”計算將具有賺取的<span class="mjx-chtml MathJax_CHTML" data-mathml='&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mn&gt;4000&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5229;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x606F;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x70BA;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF08;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x6BCF;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5E74;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF05;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF09;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF1A;&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;' id="MathJax-Element-5-Frame" role="presentation" style="box-sizing: border-box; display: inline-block; line-height: 0; text-indent: 0px; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 18.08px; letter-spacing: normal; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; margin: 0px; padding: 1px 0px; position: relative;" tabindex="0"><span aria-hidden="true" class="mjx-math" id="MJXc-Node-114"><span class="mjx-mrow" id="MJXc-Node-115"><span class="mjx-mn" id="MJXc-Node-116"><span class="mjx-char MJXc-TeX-main-R">4000</span></span><span class="mjx-texatom" id="MJXc-Node-117"><span class="mjx-mrow" id="MJXc-Node-118"><span class="mjx-mo" id="MJXc-Node-119"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">利</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-120"><span class="mjx-mrow" id="MJXc-Node-121"><span class="mjx-mo" id="MJXc-Node-122"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">息</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-123"><span class="mjx-mrow" id="MJXc-Node-124"><span class="mjx-mo" id="MJXc-Node-125"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">為</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-126"><span class="mjx-mrow" id="MJXc-Node-127"><span class="mjx-mo" id="MJXc-Node-128"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">（</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-129"><span class="mjx-mrow" id="MJXc-Node-130"><span class="mjx-mo" id="MJXc-Node-131"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">每</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-132"><span class="mjx-mrow" id="MJXc-Node-133"><span class="mjx-mo" id="MJXc-Node-134"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">年</span></span></span></span></span><span class="mjx-mn" id="MJXc-Node-135"><span class="mjx-char MJXc-TeX-main-R">2</span></span><span class="mjx-texatom" id="MJXc-Node-136"><span class="mjx-mrow" id="MJXc-Node-137"><span class="mjx-mo" id="MJXc-Node-138"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">％</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-139"><span class="mjx-mrow" id="MJXc-Node-140"><span class="mjx-mo" id="MJXc-Node-141"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">）</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-142"><span class="mjx-mrow" id="MJXc-Node-143"><span class="mjx-mo" id="MJXc-Node-144"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">：</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4000</mn><mrow class="MJX-TeXAtom-ORD"><mo>利</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>息</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>為</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>（</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>每</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>年</mo></mrow><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mo>％</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>）</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>：</mo></mrow></math></span></span><span> </span>4000×0.02 / 12個月×5個月（收支平衡時間）= 33美元。</p>
+<p>但是，這裡的問題可能是：公司可以用<span class="mjx-chtml MathJax_CHTML" data-mathml='&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mn&gt;4000&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x505A;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x4EC0;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x9EBC;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5462;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF1F;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5275;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5EFA;&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;' id="MathJax-Element-6-Frame" role="presentation" style="box-sizing: border-box; display: inline-block; line-height: 0; text-indent: 0px; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 18.08px; letter-spacing: normal; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; margin: 0px; padding: 1px 0px; position: relative;" tabindex="0"><span aria-hidden="true" class="mjx-math" id="MJXc-Node-145"><span class="mjx-mrow" id="MJXc-Node-146"><span class="mjx-mn" id="MJXc-Node-147"><span class="mjx-char MJXc-TeX-main-R">4000</span></span><span class="mjx-texatom" id="MJXc-Node-148"><span class="mjx-mrow" id="MJXc-Node-149"><span class="mjx-mo" id="MJXc-Node-150"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">做</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-151"><span class="mjx-mrow" id="MJXc-Node-152"><span class="mjx-mo" id="MJXc-Node-153"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">什</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-154"><span class="mjx-mrow" id="MJXc-Node-155"><span class="mjx-mo" id="MJXc-Node-156"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">麼</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-157"><span class="mjx-mrow" id="MJXc-Node-158"><span class="mjx-mo" id="MJXc-Node-159"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">呢</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-160"><span class="mjx-mrow" id="MJXc-Node-161"><span class="mjx-mo" id="MJXc-Node-162"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">？</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-163"><span class="mjx-mrow" id="MJXc-Node-164"><span class="mjx-mo" id="MJXc-Node-165"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">創</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-166"><span class="mjx-mrow" id="MJXc-Node-167"><span class="mjx-mo" id="MJXc-Node-168"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">建</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4000</mn><mrow class="MJX-TeXAtom-ORD"><mo>做</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>什</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>麼</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>呢</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>？</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>創</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>建</mo></mrow></math></span></span><span> </span>33的單利？也許他們可以將其投資到開發中可能產生更多收益或將其花費在其他工具上的新產品在另一個可以帶來更多收益的項目上。是的，這並不簡單。在上面的七個項目中，設計和記錄<em>工具</em>零件的成本不是微不足道的錢。如果設計，記錄和製作原型需要1週的時間，工具零件可能會使公司在設計者的時間內花費<span class="mjx-chtml MathJax_CHTML" data-mathml='&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF08;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x4F8B;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5982;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF0C;&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;' id="MathJax-Element-7-Frame" role="presentation" style="box-sizing: border-box; display: inline-block; line-height: 0; text-indent: 0px; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 18.08px; letter-spacing: normal; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; margin: 0px; padding: 1px 0px; position: relative;" tabindex="0"><span aria-hidden="true" class="mjx-math" id="MJXc-Node-169"><span class="mjx-mrow" id="MJXc-Node-170"><span class="mjx-mn" id="MJXc-Node-171"><span class="mjx-char MJXc-TeX-main-R">1000</span></span><span class="mjx-texatom" id="MJXc-Node-172"><span class="mjx-mrow" id="MJXc-Node-173"><span class="mjx-mo" id="MJXc-Node-174"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">（</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-175"><span class="mjx-mrow" id="MJXc-Node-176"><span class="mjx-mo" id="MJXc-Node-177"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">例</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-178"><span class="mjx-mrow" id="MJXc-Node-179"><span class="mjx-mo" id="MJXc-Node-180"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">如</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-181"><span class="mjx-mrow" id="MJXc-Node-182"><span class="mjx-mo" id="MJXc-Node-183"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">，</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1000</mn><mrow class="MJX-TeXAtom-ORD"><mo>（</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>例</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>如</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>，</mo></mrow></math></span></span><span> </span>1000 /週工資）。大多數公司不會在其“突破-甚至”分析，但在某些情況下值得考慮。設計師需要熟悉的另一個術語是“投資回報-ment”或簡稱為ROI。這類似於所述的“收支平衡點”之前，但提出的問題略有不同。在同樣的問題</p>
+<p>以上（選擇A和B），問題將提出為：</p>
+<p>4000美元的工具降低5美元零件的單價的投資回報是多少？一旦新的加工件價格已知（<span class="mjx-chtml MathJax_CHTML" data-mathml='&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF09;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF0C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x6578;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5B57;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5DF2;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x8A02;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x8CFC;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF08;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x4F8B;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5982;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF0C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;200&lt;/mn&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;/&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF09;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF0C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5247;&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mi&gt;I&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x500B;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x6708;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x3002;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x6240;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x4EE5;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#xFF0C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x57FA;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x672C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x4E0A;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x56DE;&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mo&gt;&amp;#x5831;&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;' id="MathJax-Element-8-Frame" role="presentation" style="box-sizing: border-box; display: inline-block; line-height: 0; text-indent: 0px; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 18.08px; letter-spacing: normal; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; margin: 0px; padding: 1px 0px; position: relative;" tabindex="0"><span aria-hidden="true" class="mjx-math" id="MJXc-Node-184"><span class="mjx-mrow" id="MJXc-Node-185"><span class="mjx-mn" id="MJXc-Node-186"><span class="mjx-char MJXc-TeX-main-R">1</span></span><span class="mjx-texatom" id="MJXc-Node-187"><span class="mjx-mrow" id="MJXc-Node-188"><span class="mjx-mo" id="MJXc-Node-189"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">）</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-190"><span class="mjx-mrow" id="MJXc-Node-191"><span class="mjx-mo" id="MJXc-Node-192"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">，</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-193"><span class="mjx-mrow" id="MJXc-Node-194"><span class="mjx-mo" id="MJXc-Node-195"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">數</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-196"><span class="mjx-mrow" id="MJXc-Node-197"><span class="mjx-mo" id="MJXc-Node-198"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">字</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-199"><span class="mjx-mrow" id="MJXc-Node-200"><span class="mjx-mo" id="MJXc-Node-201"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">已</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-202"><span class="mjx-mrow" id="MJXc-Node-203"><span class="mjx-mo" id="MJXc-Node-204"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">訂</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-205"><span class="mjx-mrow" id="MJXc-Node-206"><span class="mjx-mo" id="MJXc-Node-207"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">購</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-208"><span class="mjx-mrow" id="MJXc-Node-209"><span class="mjx-mo" id="MJXc-Node-210"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">（</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-211"><span class="mjx-mrow" id="MJXc-Node-212"><span class="mjx-mo" id="MJXc-Node-213"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">例</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-214"><span class="mjx-mrow" id="MJXc-Node-215"><span class="mjx-mo" id="MJXc-Node-216"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">如</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-217"><span class="mjx-mrow" id="MJXc-Node-218"><span class="mjx-mo" id="MJXc-Node-219"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">，</span></span></span></span></span><span class="mjx-mi" id="MJXc-Node-220"><span class="mjx-char MJXc-TeX-math-I">m</span></span><span class="mjx-mi" id="MJXc-Node-221"><span class="mjx-char MJXc-TeX-math-I">o</span></span><span class="mjx-mi" id="MJXc-Node-222"><span class="mjx-char MJXc-TeX-math-I">n</span></span><span class="mjx-mi" id="MJXc-Node-223"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-224"><span class="mjx-char MJXc-TeX-math-I">h</span></span><span class="mjx-mo MJXc-space3" id="MJXc-Node-225"><span class="mjx-char MJXc-TeX-main-R">=</span></span><span class="mjx-mn MJXc-space3" id="MJXc-Node-226"><span class="mjx-char MJXc-TeX-main-R">200</span></span><span class="mjx-mi" id="MJXc-Node-227"><span class="mjx-char MJXc-TeX-math-I">p</span></span><span class="mjx-mi" id="MJXc-Node-228"><span class="mjx-char MJXc-TeX-math-I">a</span></span><span class="mjx-mi" id="MJXc-Node-229"><span class="mjx-char MJXc-TeX-math-I">r</span></span><span class="mjx-mi" id="MJXc-Node-230"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-231"><span class="mjx-char MJXc-TeX-math-I">s</span></span><span class="mjx-texatom" id="MJXc-Node-232"><span class="mjx-mrow" id="MJXc-Node-233"><span class="mjx-mo" id="MJXc-Node-234"><span class="mjx-char MJXc-TeX-main-R">/</span></span></span></span><span class="mjx-mi" id="MJXc-Node-235"><span class="mjx-char MJXc-TeX-math-I">m</span></span><span class="mjx-mi" id="MJXc-Node-236"><span class="mjx-char MJXc-TeX-math-I">o</span></span><span class="mjx-mi" id="MJXc-Node-237"><span class="mjx-char MJXc-TeX-math-I">n</span></span><span class="mjx-mi" id="MJXc-Node-238"><span class="mjx-char MJXc-TeX-math-I">t</span></span><span class="mjx-mi" id="MJXc-Node-239"><span class="mjx-char MJXc-TeX-math-I">h</span></span><span class="mjx-texatom" id="MJXc-Node-240"><span class="mjx-mrow" id="MJXc-Node-241"><span class="mjx-mo" id="MJXc-Node-242"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">）</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-243"><span class="mjx-mrow" id="MJXc-Node-244"><span class="mjx-mo" id="MJXc-Node-245"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">，</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-246"><span class="mjx-mrow" id="MJXc-Node-247"><span class="mjx-mo" id="MJXc-Node-248"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">則</span></span></span></span></span><span class="mjx-mi" id="MJXc-Node-249"><span class="mjx-char MJXc-TeX-math-I">R</span></span><span class="mjx-mi" id="MJXc-Node-250"><span class="mjx-char MJXc-TeX-math-I">O</span></span><span class="mjx-mi" id="MJXc-Node-251"><span class="mjx-char MJXc-TeX-math-I">I</span></span><span class="mjx-mo MJXc-space3" id="MJXc-Node-252"><span class="mjx-char MJXc-TeX-main-R">=</span></span><span class="mjx-mn MJXc-space3" id="MJXc-Node-253"><span class="mjx-char MJXc-TeX-main-R">5</span></span><span class="mjx-texatom" id="MJXc-Node-254"><span class="mjx-mrow" id="MJXc-Node-255"><span class="mjx-mo" id="MJXc-Node-256"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">個</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-257"><span class="mjx-mrow" id="MJXc-Node-258"><span class="mjx-mo" id="MJXc-Node-259"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">月</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-260"><span class="mjx-mrow" id="MJXc-Node-261"><span class="mjx-mo" id="MJXc-Node-262"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">。</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-263"><span class="mjx-mrow" id="MJXc-Node-264"><span class="mjx-mo" id="MJXc-Node-265"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">所</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-266"><span class="mjx-mrow" id="MJXc-Node-267"><span class="mjx-mo" id="MJXc-Node-268"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">以</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-269"><span class="mjx-mrow" id="MJXc-Node-270"><span class="mjx-mo" id="MJXc-Node-271"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">，</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-272"><span class="mjx-mrow" id="MJXc-Node-273"><span class="mjx-mo" id="MJXc-Node-274"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">基</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-275"><span class="mjx-mrow" id="MJXc-Node-276"><span class="mjx-mo" id="MJXc-Node-277"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">本</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-278"><span class="mjx-mrow" id="MJXc-Node-279"><span class="mjx-mo" id="MJXc-Node-280"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">上</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-281"><span class="mjx-mrow" id="MJXc-Node-282"><span class="mjx-mo" id="MJXc-Node-283"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">回</span></span></span></span></span><span class="mjx-texatom" id="MJXc-Node-284"><span class="mjx-mrow" id="MJXc-Node-285"><span class="mjx-mo" id="MJXc-Node-286"><span class="mjx-char"><span class="mjx-charbox MJXc-TeX-unknown-R">報</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>）</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>，</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>數</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>字</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>已</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>訂</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>購</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>（</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>例</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>如</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>，</mo></mrow><mi>m</mi><mi>o</mi><mi>n</mi><mi>t</mi><mi>h</mi><mo>=</mo><mn>200</mn><mi>p</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mi>m</mi><mi>o</mi><mi>n</mi><mi>t</mi><mi>h</mi><mrow class="MJX-TeXAtom-ORD"><mo>）</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>，</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>則</mo></mrow><mi>R</mi><mi>O</mi><mi>I</mi><mo>=</mo><mn>5</mn><mrow class="MJX-TeXAtom-ORD"><mo>個</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>月</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>。</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>所</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>以</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>，</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>基</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>本</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>上</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>回</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo>報</mo></mrow></math></span></span><span> </span>4000美元的投資將持續5個月。</p>
+<h4><span style="color: #ff0000;"><strong>章節總結</strong></span></h4>
+<p>第<a href="https://translate.googleusercontent.com/translate_f">1</a>章介紹了設計電子產品外殼的方法。由於我們並不孤單，因此本章還定義了其他主要群體參與設計及其通常的功能。本章介紹了我們關於如何將設計視為“成功”以及如何實現設計（或超過）（定義的）產品要求。本章將帶您通過幾個“設計方案”，我們將獲得所有從“完全定義”的規範到簡約的規範。我們定義了在“頭腦風暴”或“高度關注”中進行設計的方式詳細”模式。設計評審和良好溝通渠道的需求在一般的設計過程中進行了討論。最終，工程經濟學的主題開始。這將是進一步在第一章中進行了放大。</p>
+<p><span><span><span></span></span></span></p>
+<p></p>
+<p></p><br />work << <a href='work.html'>Previous</a> <a href='w1.html'>Next</a> >> w1</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
