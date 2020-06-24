@@ -18,26 +18,30 @@
 <v t="leo.20180902120523.6"><vh>body</vh>
 <v t="leo.20180902120523.7"><vh>reveal div</vh>
 <v t="leo.20180902120523.8"><vh>slides div</vh>
-<v t="leo.20180902120523.9"><vh>封面投影片</vh></v>
-<v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
-<v t="123.20200624103319.1"><vh>個人進度</vh>
-<v t="123.20200624103319.2"><vh>week1-4</vh>
-<v t="123.20200624103319.3"><vh>第一頁</vh></v>
+<v t="123.20200624112146.1"><vh>封面投影片</vh>
+<v t="123.20200624112146.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="123.20200624103319.4"><vh>week6-8</vh>
-<v t="123.20200624103319.5"><vh>第二頁</vh></v>
-<v t="123.20200624105759.1"><vh>第三頁</vh></v>
+<v t="123.20200624103319.1"><vh>w1-4</vh>
+<v t="123.20200624103319.2"><vh>week1-4</vh></v>
 </v>
+<v t="123.20200624110237.1"><vh>w6-8</vh>
+<v t="123.20200624110237.4"><vh>week6-8</vh></v>
 </v>
-<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
-<v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
+<v t="123.20200624110429.1"><vh>w9</vh>
+<v t="123.20200624110429.2"><vh>week9</vh></v>
 </v>
-<v t="leo.20180902120523.16"><vh>導入縮排程式碼</vh>
-<v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
+<v t="123.20200624113643.1"><vh>w9</vh>
+<v t="123.20200624113643.2"><vh>week9</vh></v>
 </v>
-<v t="leo.20180902120523.18"><vh>導入影片</vh>
-<v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
+<v t="123.20200624113631.1"><vh>各式內容引用範例</vh>
+<v t="123.20200624113631.2"><vh>導入數學符號與方程式</vh>
+<v t="123.20200624113631.3"><vh>LaTeX 格式方程式</vh></v>
+</v>
+<v t="123.20200624113631.4"><vh>導入縮排程式碼</vh>
+<v t="123.20200624113631.5"><vh>引用程式碼</vh></v>
+</v>
+<v t="123.20200624113631.6"><vh>導入影片</vh>
+<v t="123.20200624113631.7"><vh>iframe 導入影片</vh></v>
 </v>
 </v>
 </v>
@@ -49,12 +53,80 @@
 </v>
 </vnodes>
 <tnodes>
-<t tx="123.20200624103319.1">&lt;section&gt;
+<t tx="123.20200624103319.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="123.20200624103319.2"># week1-4
+
+* week1重新配置可攜系統
+* week2 fork老師倉儲 ， 分配Assigmment1
+* week3-4 執行可攜系統更新，完成Assigmment1工作
+</t>
+<t tx="123.20200624110237.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="123.20200624110237.4"># week6-8
+* week6 使用OBS直播， 隨機抽點值播
+* week7 完成Assigmment2工作 (閱讀並翻譯文章)
+* week8 安裝vrep並練習使用
+
+
+
+</t>
+<t tx="123.20200624110429.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="123.20200624110429.2"># week9
+* 期中考週
+* 錄影自評
+* 下載 Ubuntu 20.04 虛擬主機
+
+
+</t>
+<t tx="123.20200624112146.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="123.20200624112146.2"># 協同產品設計實習
+
+## 40723121 邱博義
+### [個人倉儲](https://github.com/s40723121/cd2020)
+### [個人網站](https://s40723121.github.io/cd2020/content/index.html)
+### [小組網站](https://s40723138.github.io/cd2020ag4/content/index.html)
+</t>
+<t tx="123.20200624113631.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="123.20200624103319.2">&lt;section data-markdown&gt;
+<t tx="123.20200624113631.2">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
 @others
@@ -65,70 +137,14 @@
 
 						
 </t>
-<t tx="123.20200624103319.3"># week1-8
-
-*week1 重新配置可攜系統
-*week2 fork老師倉儲  
-             分配Assigmment1
-*week3-4 執行可攜系統更新
-                完成Assigmment1工作</t>
-<t tx="123.20200624103319.4">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="123.20200624103319.5"># week6-8
-
-*week6 使用OBS直播
-             隨機抽點值播
-*week7 完成Assigmment2工作
-              (閱讀並翻譯文章)
-*week8 安裝vrep並練習使用</t>
-<t tx="123.20200624105759.1"># week9
-
-*期中考週
-*錄影自評
-*下載 Ubuntu 20.04 虛擬主機</t>
-<t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">協同產品設計實習
-
-&lt;small&gt;
-40723121 邱博義
-&lt;/small&gt;
-[個人倉儲](./../blog/index.html)
-
-
-</t>
-<t tx="leo.20180902120523.13">&lt;section&gt;
-@others
-&lt;/section&gt;
-
-</t>
-<t tx="leo.20180902120523.14">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="leo.20180902120523.15"># 數學符號與方程式
+<t tx="123.20200624113631.3"># 數學符號與方程式
 
 Inline math equations go in like so: $\omega = d\phi / dt$. Display
 math should get its own line and be put in in double-dollarsigns:
 
 $$I = \int \rho R^{2} dV$$
 </t>
-<t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
+<t tx="123.20200624113631.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
 @others
@@ -139,7 +155,7 @@ $$I = \int \rho R^{2} dV$$
 
 						
 </t>
-<t tx="leo.20180902120523.17">## 利用 Markdown 寫投影片
+<t tx="123.20200624113631.5">## 利用 Markdown 寫投影片
 以下利用 Markdown 格式展示 Python 程式碼:
 ```
 @language python
@@ -167,7 +183,7 @@ make = threading.Thread(target=domake)
 make.start()
 ```
 </t>
-<t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
+<t tx="123.20200624113631.6">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
     &lt;/script&gt;
@@ -176,12 +192,30 @@ make.start()
 
 						
 </t>
-<t tx="leo.20180902120523.19">## 使用 iframe 導入影片
+<t tx="123.20200624113631.7">## 使用 iframe 導入影片
 
 ### 導入影片 template
 
 &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 </t>
+<t tx="123.20200624113643.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="123.20200624113643.2"># week9
+* 期中考週
+* 錄影自評
+* 下載 Ubuntu 20.04 虛擬主機
+
+
+</t>
+<t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
 @tabwidth -4
@@ -266,15 +300,6 @@ CMSimfly 網際內容管理
 @others
 &lt;/div&gt;
 
-</t>
-<t tx="leo.20180902120523.9">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
 </t>
 <t tx="leo.20180902120538.1"></t>
 <t tx="leo.20180902120538.2">QTreeWidget {
