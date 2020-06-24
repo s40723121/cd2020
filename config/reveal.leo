@@ -20,7 +20,7 @@
 <v t="leo.20180902120523.8"><vh>slides div</vh>
 <v t="leo.20180902120523.9"><vh>封面投影片</vh></v>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
-<v t="leo.20180902120523.11"><vh>快捷鍵</vh>
+<v t="leo.20180902120523.11"><vh>123</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20200617112356.1"><vh>快捷鍵</vh>
@@ -47,12 +47,10 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly 網際內容管理
-
-### KMOLab
+<t tx="leo.20180902120523.10">協同產品設計實習
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+40723121 邱博義
 &lt;/small&gt;
 
 [CMSimfly 網誌](./../blog/index.html)
@@ -334,9 +332,9 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20200617112356.2"># 投影片快捷鍵
+<t tx="leo.20200617112356.2"># 456
 
-* 利用箭頭上下前後換頁
+* 456
 * 按 f 鍵進入全螢幕模式 (full screen)
 * 按 s 鍵可以顯示投影片筆記 (show)
 * 按 o 鍵可以切換單張或全域檢視 (overview)
