@@ -155,120 +155,26 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">w2 << <a href='w2.html'>Previous</a> <a href='w5.html'>Next</a> >> w5<br /><h1>w3-4</h1>
-<p>分組功課</p>
-<h5>Python382</h5>
-<p><span><strong>creat by 40723111</strong></span></p>
-<p>將python 3.7.3更新至3.8.2</p>
-<p>1.<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>在這個網站上下載</p>
-<p><a href="https://www.python.org/ftp/python/3.8.2/python-3.8.2-amd64.exe">Windows x86-64 executable installer</a>安裝至自己可攜系統(把pip的選項去掉)。</p>
-<p><img caption="false" height="308" src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2019-47-16-328.jpg" width="500"/></p>
-<p>2.使用批次檔更改開始路徑，使用<span>Scite.exe 編輯器將原本的py373更改成新的3.8.2版本的路徑</span></p>
-<div>
-<div class="syntaxhighlighter html" id="highlighter_749975">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-<div class="line number16 index15 alt1">16</div>
-<div class="line number17 index16 alt2">17</div>
-<div class="line number18 index17 alt1">18</div>
-<div class="line number19 index18 alt2">19</div>
-<div class="line number20 index19 alt1">20</div>
-<div class="line number21 index20 alt2">21</div>
-<div class="line number22 index21 alt1">22</div>
-<div class="line number23 index22 alt2">23</div>
-<div class="line number24 index23 alt1">24</div>
-<div class="line number25 index24 alt2">25</div>
-<div class="line number26 index25 alt1">26</div>
-<div class="line number27 index26 alt2">27</div>
-<div class="line number28 index27 alt1">28</div>
-<div class="line number29 index28 alt2">29</div>
-<div class="line number30 index29 alt1">30</div>
-<div class="line number31 index30 alt2">31</div>
-<div class="line number32 index31 alt1">32</div>
-<div class="line number33 index32 alt2">33</div>
-<div class="line number34 index33 alt1">34</div>
-<div class="line number35 index34 alt2">35</div>
-<div class="line number36 index35 alt1">36</div>
-<div class="line number37 index36 alt2">37</div>
-<div class="line number38 index37 alt1">38</div>
-<div class="line number39 index38 alt2">39</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="html plain">@echo off</code></div>
-<div class="line number2 index1 alt1"><code class="html plain">set Disk=y</code></div>
-<div class="line number3 index2 alt2"><code class="html plain">subst %Disk%: "data"</code></div>
-<div class="line number4 index3 alt1"> </div>
-<div class="line number5 index4 alt2"><code class="html plain">%Disk%:</code></div>
-<div class="line number6 index5 alt1"> </div>
-<div class="line number7 index6 alt2"><code class="html plain">set HomePath=%Disk%:\home_mdecourse</code></div>
-<div class="line number8 index7 alt1"><code class="html plain">set HomeDrive=%Disk%:\home_mdecourse</code></div>
-<div class="line number9 index8 alt2"><code class="html plain">set Home=%Disk%:\home_mdecourse</code></div>
-<div class="line number10 index9 alt1"><code class="html plain">set USERPROFILE=%Disk%:\home_mdecourse</code></div>
-<div class="line number11 index10 alt2"> </div>
-<div class="line number12 index11 alt1"><code class="html plain">REM 將系統 Python 程式的 io 設為 utf-8</code></div>
-<div class="line number13 index12 alt2"><code class="html plain">set PYTHONIOENCODING="utf-8"</code></div>
-<div class="line number14 index13 alt1"> </div>
-<div class="line number15 index14 alt2"><code class="html plain">set PYTHONPATH=%Disk%:\py382\DLLs;%Disk%:\py382\Lib;%Disk%:\py382\Lib\site-packages;</code></div>
-<div class="line number16 index15 alt1"><code class="html plain">set PYTHONHOME=%Disk%:\py382</code></div>
-<div class="line number17 index16 alt2"> </div>
-<div class="line number18 index17 alt1"><code class="html plain">set path_python=%Disk%:\py382;%Disk%:\py382\Scripts;</code></div>
-<div class="line number19 index18 alt2"><code class="html plain">set path_msys2=%Disk%:\msys64\mingw64\bin;</code></div>
-<div class="line number20 index19 alt1"><code class="html plain">REM coreutils is for compiling fossil scm</code></div>
-<div class="line number21 index20 alt2"><code class="html plain">set path_coreutils=%Disk%:\coreutils-5.3.0\bin;%Disk%:\depends22_x64;</code></div>
-<div class="line number22 index21 alt1"><code class="html plain">set path_tcc=%Disk%:\tcc;</code></div>
-<div class="line number23 index22 alt2"><code class="html plain">set path_cmake=%Disk%:\cmake-3.10.1-win64-x64\bin;</code></div>
-<div class="line number24 index23 alt1"><code class="html plain">set path_nodejs=Disk%:\nodejs;%Disk%:\nodejs\appdata\roaming\npm;</code></div>
-<div class="line number25 index24 alt2"><code class="html plain">set path_git=%Disk%:\portablegit\bin;</code></div>
-<div class="line number26 index25 alt1"><code class="html plain">set path_xming=%Disk%:\Xming;</code></div>
-<div class="line number27 index26 alt2"><code class="html plain">set path_latex=%%Disk%:\Pandoc;%Disk%:\TinyTeX\bin\win32;</code></div>
-<div class="line number28 index27 alt1"> </div>
-<div class="line number29 index28 alt2"><code class="html plain">path=%Disk%:;%path_python%;%path_msys2%;%path_tcc%;%path_git%;%path_cmake%;%path_coreutils%;</code></div>
-<div class="line number30 index29 alt1"> </div>
-<div class="line number31 index30 alt2"><code class="html plain">start /MIN cmd.exe</code></div>
-<div class="line number32 index31 alt1"><code class="html plain">start /MIN cmd.exe</code></div>
-<div class="line number33 index32 alt2"><code class="html plain">start /MIN cmd.exe</code></div>
-<div class="line number34 index33 alt1"><code class="html plain">start /MIN cmd.exe</code></div>
-<div class="line number35 index34 alt2"> </div>
-<div class="line number36 index35 alt1"><code class="html plain">start /MIN %Disk%:\wscite415\wscite\SciTE.exe</code></div>
-<div class="line number37 index36 alt2"><code class="html plain">start /MIN %Disk%:\wscite415\wscite\SciTE.exe</code></div>
-<div class="line number38 index37 alt1"> </div>
-<div class="line number39 index38 alt2"><code class="html plain">Exit</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p><span>3.執行get-pip.py (取得安裝管理工具)</span></p>
-<p><span><img caption="false" height="360" src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2020-09-44-429.jpg" width="600"/></span></p>
-<p><span>4.執行pip install指令將</span></p>
-<p><strong>Flask</strong></p>
-<p><strong>Markdown</strong></p>
-<p><strong>lxml</strong></p>
-<p><strong>bs4</strong></p>
-<p><strong>flask_cors</strong></p>
-<p><strong>pelican</strong></p>
-<p><strong>leo</strong></p>
-<p><span>這些3.8.2版本缺少的模組依序安裝下來。</span></p>
-<p><span><img caption="false" height="360" src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2020-10-06-961.jpg" width="600"/></span></p><br />w2 << <a href='w2.html'>Previous</a> <a href='w5.html'>Next</a> >> w5</div>
+<h4>分組功課</h4>
+<h4>Python382</h4>
+<h4><span><strong>creat by 40723111</strong></span></h4>
+<h4>將python 3.7.3更新至3.8.2</h4>
+<h4>1.<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>在這個網站上下載</h4>
+<h4><a href="https://www.python.org/ftp/python/3.8.2/python-3.8.2-amd64.exe">Windows x86-64 executable installer</a>安裝至自己可攜系統(把pip的選項去掉)。</h4>
+<h4><img caption="false" height="308" src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2019-47-16-328.jpg" width="500"/></h4>
+<h4>2.使用批次檔更改開始路徑，使用<span>Scite.exe 編輯器將原本的py373更改成新的3.8.2版本的路徑</span></h4>
+<h4><span>3.執行get-pip.py (取得安裝管理工具)</span></h4>
+<h4><span><img caption="false" height="360" src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2020-09-44-429.jpg" width="600"/></span></h4>
+<h4><span>4.執行pip install指令將</span></h4>
+<h4><strong>Flask</strong></h4>
+<h4><strong>Markdown</strong></h4>
+<h4><strong>lxml</strong></h4>
+<h4><strong>bs4</strong></h4>
+<h4><strong>flask_cors</strong></h4>
+<h4><strong>pelican</strong></h4>
+<h4><strong>leo</strong></h4>
+<h4><span>這些3.8.2版本缺少的模組依序安裝下來。</span></h4>
+<h4><span><img caption="false" height="360" src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2020-10-06-961.jpg" width="600"/></span></h4><br />w2 << <a href='w2.html'>Previous</a> <a href='w5.html'>Next</a> >> w5</div>
         
     <!-- footer -->
       <div class="container">

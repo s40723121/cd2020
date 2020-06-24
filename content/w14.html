@@ -155,40 +155,41 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">w15 << <a href='w15.html'>Previous</a> <a href='w13.html'>Next</a> >> w13<br /><h1>w14</h1>
-<h5>設定ipv6</h5>
-<p>1. 查詢 <span>ifconfig</span></p>
-<p><span>2.執行<span> </span><span>sudo apt install net-tools</span></span></p>
-<p><span>3.</span></p>
-<div class="line number1 index0 alt2"><span><code class="html plain">cd /etc/netplan</code></span></div>
-<div class="line number2 index1 alt1"><span><code class="html plain">sudo vi 00-installer-config.yaml</code></span></div>
-<div class="line number2 index1 alt1"><code class="html plain"></code></div>
-<div class="line number2 index1 alt1"><code class="html plain"><code class="html plain">4. 將內部資訊改成</code></code></div>
+<h4>設定ipv6</h4>
+<h4>1. 查詢 <span>ifconfig</span></h4>
+<h4><span>2.執行<span> </span><span>sudo apt install net-tools</span></span></h4>
+<h4><span>3.</span></h4>
+<h4 class="line number1 index0 alt2"><span><code class="html plain">cd /etc/netplan</code></span></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain">sudo vi 00-installer-config.yaml</code></span></h4>
+<h4 class="line number2 index1 alt1"><code class="html plain"></code></h4>
+<h4 class="line number2 index1 alt1"><code class="html plain"><code class="html plain">4. 將內部資訊改成</code></code></h4>
 <div class="line number2 index1 alt1">
-<div class="line number1 index0 alt2"><code class="html plain"></code></div>
-<div class="line number1 index0 alt2"><span><code class="html plain"># This is the network config written by 'subiquity'</code></span></div>
-<div class="line number2 index1 alt1"><span><code class="html plain">network:</code></span></div>
-<div class="line number3 index2 alt2"><span><code class="html spaces">    </code><code class="html plain">ethernets:</code></span></div>
-<div class="line number4 index3 alt1"><span><code class="html spaces">        </code><code class="html plain">enpes3:</code></span></div>
-<div class="line number5 index4 alt2"><span><code class="html spaces">            </code><code class="html plain">dhcp4: true</code></span></div>
-<div class="line number6 index5 alt1"><span><code class="html spaces">            </code><code class="html plain">dhcp6: true</code></span></div>
-<div class="line number7 index6 alt2"><span><code class="html spaces">            </code><code class="html plain">nameservers:</code></span></div>
-<div class="line number8 index7 alt1"><span><code class="html spaces">                </code><code class="html plain">addresses:</code></span></div>
-<div class="line number9 index8 alt2"><span><code class="html spaces">                    </code><code class="html plain">- 2001:b000:168::1</code></span></div>
-<div class="line number10 index9 alt1"><span><code class="html spaces">    </code><code class="html plain">version: 2</code></span></div>
-<div class="line number10 index9 alt1"><code class="html plain"></code></div>
-<div class="line number10 index9 alt1"><code class="html plain">5.<span>sudo netplan apply</span></code></div>
-<div class="line number10 index9 alt1"><code class="html plain"><code class="html plain">6.</code></code><span>cd /etc/apt/apt.conf.d</span>
-<div class="line number2 index1 alt1"><code class="html plain">7.<span>sudo vi proxy.conf</span></code></div>
-<div class="line number2 index1 alt1"><code class="html plain">8.設定網路</code></div>
-<div class="line number2 index1 alt1"><span><code class="html plain">Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";</code></span></div>
-<div class="line number2 index1 alt1"><code class="html plain">9.<span>sudo apt update</span></code></div>
-<div class="line number2 index1 alt1"><code class="html plain"><span></span></code></div>
-<div class="line number2 index1 alt1"><span><code class="html plain">之後開始設定ipv6</code></span></div>
-<div class="line number2 index1 alt1"><span><code class="html plain"><img alt="" height="469" src="http://mde.tw/cdaw14-1/images/VirtualBox_alxu8HR0er.png" width="670"/></code></span></div>
-<div class="line number2 index1 alt1"><span><code class="html plain"></code></span></div>
-<div class="line number2 index1 alt1"><span><code class="html plain"></code></span></div>
-<div class="line number2 index1 alt1"><span><code class="html plain">10.<span> </span><span>vi oauth_gm.txt<span>(cd tmp)下</span></span></code></span></div>
-<div class="line number2 index1 alt1"><span><code class="html plain"><span><span>11.<span>python3 wsgi.py</span></span></span></code></span></div>
+<h4 class="line number1 index0 alt2"><code class="html plain"></code></h4>
+<h4 class="line number1 index0 alt2"><span><code class="html plain"># This is the network config written by 'subiquity'</code></span></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain">network:</code></span></h4>
+<h4 class="line number3 index2 alt2"><span><code class="html spaces">    </code><code class="html plain">ethernets:</code></span></h4>
+<h4 class="line number4 index3 alt1"><span><code class="html spaces">        </code><code class="html plain">enpes3:</code></span></h4>
+<h4 class="line number5 index4 alt2"><span><code class="html spaces">            </code><code class="html plain">dhcp4: true</code></span></h4>
+<h4 class="line number6 index5 alt1"><span><code class="html spaces">            </code><code class="html plain">dhcp6: true</code></span></h4>
+<h4 class="line number7 index6 alt2"><span><code class="html spaces">            </code><code class="html plain">nameservers:</code></span></h4>
+<h4 class="line number8 index7 alt1"><span><code class="html spaces">                </code><code class="html plain">addresses:</code></span></h4>
+<h4 class="line number9 index8 alt2"><span><code class="html spaces">                    </code><code class="html plain">- 2001:b000:168::1</code></span></h4>
+<h4 class="line number10 index9 alt1"><span><code class="html spaces">    </code><code class="html plain">version: 2</code></span></h4>
+<h4 class="line number10 index9 alt1"><code class="html plain"></code></h4>
+<h4 class="line number10 index9 alt1"><code class="html plain">5.<span>sudo netplan apply</span></code></h4>
+<div class="line number10 index9 alt1">
+<h4><code class="html plain"><code class="html plain">6.</code></code><span>cd /etc/apt/apt.conf.d</span></h4>
+<h4 class="line number2 index1 alt1"><code class="html plain">7.<span>sudo vi proxy.conf</span></code></h4>
+<h4 class="line number2 index1 alt1"><code class="html plain">8.設定網路</code></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain">Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";</code></span></h4>
+<h4 class="line number2 index1 alt1"><code class="html plain">9.<span>sudo apt update</span></code></h4>
+<h4 class="line number2 index1 alt1"><code class="html plain"><span></span></code></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain">之後開始設定ipv6</code></span></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain"><img alt="" height="469" src="http://mde.tw/cdaw14-1/images/VirtualBox_alxu8HR0er.png" width="670"/></code></span></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain"></code></span></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain"></code></span></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain">10.<span> </span><span>vi oauth_gm.txt<span>(cd tmp)下</span></span></code></span></h4>
+<h4 class="line number2 index1 alt1"><span><code class="html plain"><span><span>11.<span>python3 wsgi.py</span></span></span></code></span></h4>
 </div>
 </div><br />w15 << <a href='w15.html'>Previous</a> <a href='w13.html'>Next</a> >> w13</div>
         
