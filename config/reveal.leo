@@ -30,19 +30,32 @@
 <v t="123.20200624110429.1"><vh>w9</vh>
 <v t="123.20200624110429.2"><vh>week9</vh></v>
 </v>
-<v t="123.20200624113643.1"><vh>w9</vh>
-<v t="123.20200624113643.2"><vh>week9</vh></v>
+<v t="123.20200624113643.1"><vh>w10-12</vh>
+<v t="123.20200624113643.2"><vh>week10-12</vh></v>
 </v>
-<v t="123.20200624113631.1"><vh>各式內容引用範例</vh>
-<v t="123.20200624113631.2"><vh>導入數學符號與方程式</vh>
-<v t="123.20200624113631.3"><vh>LaTeX 格式方程式</vh></v>
+<v t="leo.20200630234934.1"><vh>w13-16</vh>
+<v t="leo.20200630234934.2"><vh>week13-16</vh></v>
 </v>
-<v t="123.20200624113631.4"><vh>導入縮排程式碼</vh>
-<v t="123.20200624113631.5"><vh>引用程式碼</vh></v>
+<v t="leo.20200630234122.1"><vh>mini</vh>
+<v t="leo.20200630234122.2"><vh>mini</vh></v>
 </v>
-<v t="123.20200624113631.6"><vh>導入影片</vh>
-<v t="123.20200624113631.7"><vh>iframe 導入影片</vh></v>
+<v t="leo.20200630235911.1"><vh>work1</vh>
+<v t="leo.20200630235911.2"><vh>work1</vh></v>
 </v>
+<v t="leo.20200701000352.1"><vh>work2</vh>
+<v t="leo.20200701000352.2"><vh>work2</vh></v>
+</v>
+<v t="leo.20200701000710.1"><vh>work3</vh>
+<v t="leo.20200701000710.2"><vh>work3</vh></v>
+</v>
+<v t="leo.20200701001303.1"><vh>虛擬主機</vh>
+<v t="leo.20200701001303.2"><vh>虛擬主機</vh></v>
+</v>
+<v t="leo.20200701002841.1"><vh>AG4</vh>
+<v t="leo.20200701002841.2"><vh>AG4</vh></v>
+</v>
+<v t="leo.20200701002413.1"><vh>問題</vh>
+<v t="leo.20200701002413.2"><vh>問題</vh></v>
 </v>
 </v>
 </v>
@@ -121,83 +134,6 @@
 ### [個人網站](https://s40723121.github.io/cd2020/content/index.html)
 ### [小組網站](https://s40723138.github.io/cd2020ag4/content/index.html)
 </t>
-<t tx="123.20200624113631.1">&lt;section&gt;
-@others
-&lt;/section&gt;
-
-</t>
-<t tx="123.20200624113631.2">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="123.20200624113631.3"># 數學符號與方程式
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-</t>
-<t tx="123.20200624113631.4">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="123.20200624113631.5">## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-@language python
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-</t>
-<t tx="123.20200624113631.6">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="123.20200624113631.7">## 使用 iframe 導入影片
-
-### 導入影片 template
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
 <t tx="123.20200624113643.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -208,11 +144,9 @@ make.start()
 						
 
 </t>
-<t tx="123.20200624113643.2"># week9
-* 期中考週
-* 錄影自評
-* 下載 Ubuntu 20.04 虛擬主機
-
+<t tx="123.20200624113643.2"># week10-12
+* week10 安裝leo並學習如何使用
+* week11-12  完成 Assignment 3 分組任務(繪圖)
 
 </t>
 <t tx="leo.20180902120523.1"></t>
@@ -377,5 +311,139 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20200630234122.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="leo.20200630234122.2"># mini project抽點
+
+* ### [cdaw12-2](https://github.com/s40723121/cdaw12-2)
+* ### [cdaw13-3](https://github.com/mdecourse/cdaw13-3)
+* ### [cdaw14-1](https://github.com/mdecourse/cdaw14-1)
+</t>
+<t tx="leo.20200630234934.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="leo.20200630234934.2"># week13-16
+* week13-14 進行Ubuntu 網路環境配製
+* week15 利用 ipv4 prot號為 ::1 開啟虛擬主機遠.近端網頁
+* week16 利用 ipv6 prot號為自己學號 開啟虛擬主機遠.近端網頁
+
+
+
+</t>
+<t tx="leo.20200630235911.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="leo.20200630235911.2">#  分組任務一
+
+* 分配工作為更新python至3.8.2版本
+* ### [步驟](https://s40723121.github.io/cd2020/content/%E4%BB%BB%E5%8B%99%E4%B8%80.html)
+* ### [影片](https://www.youtube.com/watch?v=qTscQTIkYzY)
+</t>
+<t tx="leo.20200701000352.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="leo.20200701000352.2">#  分組任務二
+
+* 分配工作為翻譯英文書
+* ### [完成翻譯並整理版本](https://s40723121.github.io/cd2020/downloads/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%88%90%E5%8A%9F%E7%9A%84%E8%A8%AD%E8%A8%88.pdf)
+
+</t>
+<t tx="leo.20200701000710.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="leo.20200701000710.2">#  分組任務三
+
+* 分配工作為繪製輪框
+* ### [onshape ](https://cad.onshape.com/documents/97f39c166cd7c735df0bae3c/w/67f6d39688910f27ae673329/e/64a3d4be9ef51328bbb8fe68)
+* ### [影片](https://www.youtube.com/watch?v=V1geRSPndaE)
+</t>
+<t tx="leo.20200701001303.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="leo.20200701001303.2">#  虛擬主機
+
+
+* ### [ipv4網站 ](https://s40723121.github.io/cd2020/content/IPV4.html)
+* ### [ipv6網站](https://s40723121.github.io/cd2020/content/IPV6.html)
+
+</t>
+<t tx="leo.20200701002413.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="leo.20200701002413.2">#  問題解決
+
+
+* ### [更新小組倉儲 ](https://s40723121.github.io/cd2020/content/%E6%9B%B4%E6%96%B0%E5%B0%8F%E7%B5%84%E5%80%89%E5%84%B2.html)
+* ### [提交小組倉儲無紀錄](https://s40723121.github.io/cd2020/content/%E7%84%A1%E6%95%88%E6%8E%A8%E9%80%81%E6%8F%90%E4%BA%A4.html)
+* ### [ubuntu開啟錯誤](https://s40723121.github.io/cd2020/content/ubuntu%E9%96%8B%E5%95%9F%E5%87%BA%E7%8F%BE%E9%8C%AF%E8%AA%A4.html)
+* ### [家中與學校網路切換](https://s40723121.github.io/cd2020/content/%E5%AE%B6%E8%A3%A1%E5%92%8C%E5%AD%B8%E6%A0%A1%E7%B6%B2%E8%B7%AF%E5%88%87%E6%8F%9B.html)
+* ### [IPV6設定](https://s40723121.github.io/cd2020/content/IPV6%E8%A8%AD%E5%AE%9A.html)
+</t>
+<t tx="leo.20200701002841.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+
+</t>
+<t tx="leo.20200701002841.2">#  AG4
+
+
+* ### [AG4網站 ](https://s40723138.github.io/cd2020ag4/content/index.html)
+* ### [小組會議](https://s40723138.github.io/cd2020ag4/content/%E7%9B%B4%E6%92%AD%E6%9C%83%E8%AD%B0%E8%A8%98%E9%8C%84.html)
+</t>
 </tnodes>
 </leo_file>
